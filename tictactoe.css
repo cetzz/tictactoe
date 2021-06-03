@@ -1,0 +1,108 @@
+body{
+    margin: unset;
+}
+#outerbody{
+    width:50vw; 
+    height:50vw; 
+    margin: 0 auto;
+}
+.noclick{
+    pointer-events: none
+}
+.row{
+    display:flex;
+    margin: 0 auto;
+    height:calc(100% / 3);
+    width:auto;
+}
+.box{
+    width:calc(100% / 3);
+    height:100%;
+    background-color:wheat;
+    /*border: 1px solid blue;*/
+    box-sizing: border-box;
+    margin: 0 auto;
+    border-radius: 10%;
+
+}
+.circle{
+    transition: height 0.5s, width 0.5s;
+    background-color:chocolate;
+    border-radius: 100%;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.stage_0{
+    height:0%;
+    width:0%;
+}
+
+.stage_1{
+    height:50%;
+    width:50%;
+}
+
+.stage_2{
+    height:75%;
+    width:75%;
+}
+
+.stage_3{
+    height:100%;
+    width:100%;
+}
+
+    
+.player_1{
+    background-color:red;
+}
+.player_1_text{
+    color:red;
+}
+.player_2{
+    background-color:blue;
+}
+.player_2_text{
+    color:blue;
+}
+
+.text{
+    position: absolute; 
+    width: 100%;
+    
+    font-size: 10vw;
+    font-family: Paintbrush;
+
+    margin: auto;
+    text-align: center;
+    
+    left: 0; 
+    right: 0; 
+    top: 50%;
+    z-index: 2;
+    transform: translateY(-50%);
+
+}
+.nodisplay{
+    display:none;
+}
+@font-face {
+    font-family: Paintbrush;
+    src: url(Oh\ Now!.ttf);
+}
+@media screen and (max-width: 1400px) {
+    #outerbody{
+        width:100vw; 
+        height:100vw; 
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+    }
+    .text{
+        font-size: 40vw;
+    }
+
+}
