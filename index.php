@@ -1,5 +1,5 @@
 <?php
 
-header('Location: tictactoe.php');
+header('Location: tictactoe.html');
 
 ?>
