@@ -107,13 +107,13 @@ function evaluateWin( y, x, player ){
             }
         }
         //check anti diag 
-        if(x + y == n - 1){
-            for(i = 0; i < n; i++){
-                if(board[i][(n-1)-i].player != player)
-                    break;
-                if(i == n-1){
-                  return player;
-                }
+        if(x*1 + y*1 == 2){
+            for(i = 0; i <= 2; i++){
+                if(board[0+i][2-i].player != player)
+                    break;          
+            }
+            if (i==3){
+              return player;
             }
         }
         return 0;
